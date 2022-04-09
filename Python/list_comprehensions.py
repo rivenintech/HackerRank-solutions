@@ -1,9 +1,10 @@
 # https://www.hackerrank.com/challenges/list-comprehensions/problem
 
 # -------------------------------------- Task --------------------------------------:
-# You are given three integers x, y and z representing the dimensions of a cuboid along with an integer n. Print a list of all possible coordinates given by (i, j, k)
-# on a 3D grid where the sum of i + j + k is not equal to n.
+# You are given three integers 'x', 'y' and 'z' representing the dimensions of a cuboid along with an integer 'n'. Print a list of all possible coordinates given by (i, j, k)
+# on a 3D grid where the sum of i + j + k is not equal to 'n'.
 # ----------------------------------------------------------------------------------
+
 
 # taking input and changing it to "int" type
 x = int(input())
