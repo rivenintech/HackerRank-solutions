@@ -17,7 +17,8 @@ def swap_case(s):
             
         new_string += x
         
-    return new_string # you can also just use 'return s.swapcase()' - which is a builtin function
+    return new_string
+    # return s.swapcase() is another solution ('swapcase()' is a builtin function)
 
 if __name__ == '__main__':
     s = input()
