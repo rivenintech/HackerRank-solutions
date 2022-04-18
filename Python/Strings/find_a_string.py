@@ -11,21 +11,11 @@
 
 def count_substring(string, sub_string):
     counter = 0
-    
-    # looping through a string
-    for i in range(len(string)):
-        if string[i] == sub_string[0]: # if first letter matches sub_string's first letter
+
+    for i in range(len(string) - len(sub_string) + 1): # max search length
+        if string[i:(i + len(sub_string))] == sub_string:
             counter += 1
-            
-            for j in range(len(sub_string)):
-                try:
-                    if string[i + j] != sub_string[j]: # if any letter doesn't match -> end loop
-                        counter -= 1
-                        break
-                except IndexError: # if it goes beyond string boundary
-                    counter -= 1
-                    break
-        
+
     return counter
 
 if __name__ == '__main__':
